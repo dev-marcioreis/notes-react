@@ -1,6 +1,8 @@
 # Notes (ReactJS)
 
-Iniciando novo projeto em React.<br>
+Novo projeto em React.<br>
+Este projeto é um bloco de notas, você pode add notas, editar ou excluir.<br>
+Mesmo que você feche o navegador ou atualize, as notas só somem se você apaga-las.<br>
 React18<br>
 React icons<br>
 React router<br>
