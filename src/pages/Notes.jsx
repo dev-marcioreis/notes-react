@@ -8,6 +8,9 @@ const Notes = () => {
             <input type="text" autoFocus placeholder="Buscar notas..." />
             <button className='btn'><Search /></button>
         </header>
+        <div className="notes__container">
+            
+        </div>
     </section>
   )
 }
