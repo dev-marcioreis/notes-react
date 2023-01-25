@@ -7,7 +7,7 @@ const CreateNotes = () => {
   return (
     <section>
       <header className="create-notes__header">
-        <Link to='/notes-react' className='btn btn-large'><Arrow /></Link>
+        <Link to='/notes-react' className='btn btn-large'><Arrow /> voltar</Link>
         <button className='btn btn-large'><Save /> salvar nota</button>
       </header>
       <form className='create-notes__form'>

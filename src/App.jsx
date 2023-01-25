@@ -10,7 +10,7 @@ const App = () => {
         <Routes>
             <Route path="/notes-react" element={<Notes />} />
             <Route path="/notes-react/create-notes" element={<CreateNotes />} />
-            <Route path="/notes-react/edit-notes/:id" element={<EditNotes />} />
+            <Route path="/notes-react/edit-notes" element={<EditNotes />} />
         </Routes>
     </BrowserRouter>
     </main>
