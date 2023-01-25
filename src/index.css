@@ -50,6 +50,7 @@ body {
     padding: .8rem 1.5rem;
     font-size: 1.2rem;
     box-shadow: var(--shadow);
+    background: var(--black-color);
 }
 .btn-danger {
     background: var(--primary-color);
@@ -160,3 +161,6 @@ h1, h2 {
 .note:nth-child(9) {
     grid-column: 1/3;
 }
+
+
+/*==========Create Notes==========*/
