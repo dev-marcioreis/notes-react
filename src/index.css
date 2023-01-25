@@ -20,10 +20,13 @@
     --white-color: hsl(0, 0%, 100%);
     --primary-color: hsl(264, 69%, 53%);
     --danger-color: hsl(0, 93%, 65%);
-    --bg-color: hsl(0, 0%, 80%);
+    --bg-color: linear-gradient(45deg,  #4c4c4c 0%,#666666 0%,#666666 0%,#666666 4%,#666666 4%,#666666 8%,#666666 8%,#32363d 25%,#32363d 25%,#2b3138 34%,#2b3138 36%,#2b3138 39%,#2b3138 45%,#2b3138 60%,#32363d 67%,#666666 85%,#666666 89%,#666666 89%,#666666 98%,#666666 100%,#403f45 100%,#1c1c1c 100%,#131313 100%,#525151 100%);
+    --bg2-color: linear-gradient(35deg,#474A51 1%,#1f2127 50%,#1f2127 70%,#1f2127 70%,#474A51 100%);
     --orange-color: hsl(39, 100%, 50%);
-    --shadow: 0 4px 20px hsla(0, 0%, 4%, 0.103);
+    --transparent-color: hsla(0, 0%, 0%, 0);
+    --shadow: 0 4px 20px hsla(0, 0%, 4%, 0.322);
     --shadow1: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+    --shadow2: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     --transition: all 300ms ease:
 }
 
@@ -34,14 +37,13 @@ body {
     color: var(--white-color);
     background: var(--bg-color);
     line-height: 1.5;
+    height: 100vh;
 }
 .btn {
-    background: var(--dark-color);
-    border-radius: .8rem;
+    background: var(--transparent-color);
+    color: var(--white-color);
     padding: .8rem;
     font-size: 1.5rem;
-    color: var(--white-color);
-    box-shadow: var(--shadow1);
     cursor: pointer;
     transition: var(--transition);
 }
@@ -52,6 +54,10 @@ body {
 }
 .btn-danger {
     background: var(--primary-color);
+}
+.btn:hover {
+    color: var(--orange-color);
+    transform: scale(1.2);
 }
 #app {
     position: relative;
@@ -69,4 +75,25 @@ h1, h2 {
 }
 ::-webkit-scrollbar {
     display: none;
+}
+
+/*==========Notes==========*/
+.header__notes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.6rem 1.5rem;
+    background: var(--bg2-color);
+    box-shadow: var(--shadow);
+    z-index: 10;
+}
+.header__notes input {
+    width: 100%;
+    margin-right: 1.5rem;
+    padding: .7rem 1rem;
+    background: var(--transparent-color);
+    box-shadow: var(--shadow1);
+    border-radius: .6rem;
+    color: var(--white-color);
+    font-size: 1.1rem;
 }
