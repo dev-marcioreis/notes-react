@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineArrowLeft as Arrow } from 'react-icons/ai'
 import { AiOutlineSave as Save } from 'react-icons/ai'
 import { v4 as uuid } from 'uuid'
@@ -7,18 +7,24 @@ import { v4 as uuid } from 'uuid'
 import useCreateDate from '../components/useCreateDate'
 
 
-const CreateNotes = () => {
+const CreateNotes = ( {setNotes} ) => {
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
   const date = useCreateDate()
+  const navigate = useNavigate()
 
   const submit = e => {
     e.preventDefault()
 
     if(title && details) {
       const noteID = {id: uuid(), title, details, date}
-      console.log(noteID)
+
+      setNotes(prevNotes => [noteID, ...prevNotes])
+
+      navigate('/notes-react/')
+
     }
+
   }
 
   return (
