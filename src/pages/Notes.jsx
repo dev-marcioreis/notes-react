@@ -1,10 +1,9 @@
 import { BiSearchAlt as Search } from 'react-icons/bi' 
 import { AiOutlinePlus as Plus } from 'react-icons/ai'
-import notes  from '../notes'
 import { Link } from 'react-router-dom'
 import NoteItem from '../components/NoteItem'
 
-const Notes = () => {
+const Notes = ( {notes} ) => {
   return (
     <section>
         <header className="header__notes">
