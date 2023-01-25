@@ -9,7 +9,7 @@ const EditNotes = () => {
       <header className="edit-notes__header">
         <Link to='/notes-react' className='btn btn-large'><Arrow /> voltar</Link>
         <button className='btn btn-large'><Save /> salvar</button>
-        <button className='btn btn-danger'><Edit /> editar nota</button>
+        <button className='btn btn-danger'><Edit /> editar</button>
       </header>
       <form className='edit-notes__form'>
         <input type="text" autoFocus placeholder='Título...' />

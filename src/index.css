@@ -189,3 +189,18 @@ button {
 }
 
 
+/*==========Media Query 768px==========*/ 
+@media (max-width: 768px) {
+    #App {
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem .5rem;
+    }
+    .header__notes, .create-notes__header, .edit-notes__header {
+        padding: 0 .2rem 3rem;
+    }
+    .notes__container {
+        gap: .5rem;
+    }
+
+}
