@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AiOutlineArrowLeft as Arrow } from 'react-icons/ai'
+import { AiOutlineHome as Home } from 'react-icons/ai'
 import { AiOutlineSave as Save } from 'react-icons/ai'
 import { v4 as uuid } from 'uuid'
 
@@ -30,8 +30,8 @@ const CreateNotes = ( {setNotes} ) => {
   return (
     <section>
       <header className="create-notes__header">
-        <Link to='/notes-react' className='btn btn-large'><Arrow /> voltar</Link>
-        <button className='btn btn-large' onClick={submit}><Save /> salvar nota</button>
+        <Link to='/notes-react' className='btn btn-large'><Home /> Voltar</Link>
+        <button className='btn btn-large' onClick={submit}><Save /> salvar</button>
       </header>
       <form className='create-notes__form' onSubmit={submit} >
         <input type="text" autoFocus placeholder='Título...' value={title} onChange={e => setTitle(e.target.value)} />
