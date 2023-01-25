@@ -1,6 +1,9 @@
 # Notes (ReactJS)
 
 Iniciando novo projeto em React.<br>
+React18<br>
+React icons<br>
+React router<br>
 Link de acesso: https://dev-marcioreis.github.io/notes-react/
 ![image](https://user-images.githubusercontent.com/122680054/214588722-a7d72948-8a8b-42e0-8852-d7d0ab8c0f05.png)
 
