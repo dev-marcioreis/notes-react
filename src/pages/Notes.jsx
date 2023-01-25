@@ -2,7 +2,7 @@ import { BiSearchAlt as Search } from 'react-icons/bi'
 import { AiOutlinePlus as Plus } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import NoteItem from '../components/NoteItem'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Notes = ( {notes} ) => {
   const [search, setSearch] = useState(false)
@@ -16,6 +16,8 @@ const Notes = ( {notes} ) => {
       }
     }))
   }
+
+  useEffect(handleSearch, [text])
 
   return (
     <section>
