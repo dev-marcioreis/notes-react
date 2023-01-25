@@ -41,7 +41,7 @@ body {
 }
 .btn {
     background: var(--transparent-color);
-    color: var(--orange-color);
+    color: var(--white-color);
     padding: .8rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -56,6 +56,22 @@ body {
     background: var(--primary-color);
 }
 .btn:hover {
+    transform: scale(1.2);
+    color: var(--orange-color);
+}
+.btn.add__btn {
+    position: fixed;
+    bottom: 4rem;
+    left: 7rem;
+    padding: .5rem;
+    font-size: 2rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    box-shadow: var(--shadow1);
+}
+.btn.add__btn:hover {
+    box-shadow: none;
+    color: var(--orange-color);
     transform: scale(1.2);
 }
 #app {
