@@ -5,13 +5,15 @@ import Notes from "./pages/Notes"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <main id="App">
+      <BrowserRouter>
         <Routes>
             <Route path="/notes-react" element={<Notes />} />
             <Route path="/notes-react/create-notes" element={<CreateNotes />} />
             <Route path="/notes-react/edit-notes/:id" element={<EditNotes />} />
         </Routes>
     </BrowserRouter>
+    </main>
   )
 }
 

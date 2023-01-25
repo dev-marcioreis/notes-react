@@ -59,6 +59,12 @@ const notes = [
         details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam totam quia laboriosam, fuga veritatis atque.',
         date: '25 de Jan, 2023'
     },
+    {
+        id: 11,
+        title: 'Título 11',
+        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam totam quia laboriosam, fuga veritatis atque.',
+        date: '25 de Jan, 2023'
+    }
 ]
 
 export default notes;
