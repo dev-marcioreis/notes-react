@@ -1,8 +1,14 @@
-import React from 'react'
+import { BiSearchAlt as Search } from 'react-icons/bi' 
 
 const Notes = () => {
   return (
-    <div>Notes</div>
+    <section>
+        <header className="header__notes">
+            <h1>Notas</h1>
+            <input type="text" autoFocus placeholder="Buscar notas..." />
+            <button className='btn'><Search /></button>
+        </header>
+    </section>
   )
 }
 
