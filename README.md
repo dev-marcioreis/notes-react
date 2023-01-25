@@ -5,7 +5,7 @@ React18<br>
 React icons<br>
 React router<br>
 Link de acesso: https://dev-marcioreis.github.io/notes-react/
-![image](https://user-images.githubusercontent.com/122680054/214607770-03f38eff-f388-448b-94e8-298fd2b93520.png)
+![image](https://user-images.githubusercontent.com/122680054/214668676-59a97c34-1a4e-4a60-86c5-cc724110efab.png)
 
 
 Getting Started with Create React App
