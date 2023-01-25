@@ -49,6 +49,7 @@ body {
 .btn-large {
     padding: .8rem 1.5rem;
     font-size: 1.2rem;
+    transition: var(--transition);
 }
 .btn-danger {
     background: var(--primary-color);
@@ -57,27 +58,25 @@ body {
     color: var(--orange-color);
 }
 .btn.add__btn {
-    position: fixed;
+    position: absolute;
     display: flex;
     gap: .2rem;
     align-items: center;
-    top: 1.5rem;
-    right: 23rem;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--orange-color);
-    box-shadow: var(--shadow1);
+    top: 4rem;
+    right: 1.5rem;
+    color: var(--white-color);
     transition: var(--transition);
 }
 .btn.add__btn:hover {
-    color: var(--white-color);
-    background: var(--orange-color);
+    color: var(--orange-color);
 }
 #App {
     position: relative;
     box-shadow: var(--shadow1);
-    height: 45rem;
-    width: 30rem;
+    height: 44rem;
+    width: 38rem;
     padding: .5rem 1rem;
     overflow: scroll;
 }
@@ -96,7 +95,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.6rem 1.5rem;
+    padding: 0 1rem 3rem;
     background: var(--bg-color);
     box-shadow: var(--shadow1);
     border-radius: .5rem .5rem 0 0;
@@ -110,7 +109,7 @@ h1, h2 {
 }
 .header__notes input {
     width: 100%;
-    margin-right: 1.5rem;
+    margin-left: .5rem;
     padding: .7rem 1rem;
     background: var(--transparent-color);
     box-shadow: var(--shadow1);
@@ -190,4 +189,9 @@ h1, h2 {
 .create-notes__form input {
     font-size: 2rem;
     font-weight: 700;
+}
+button {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
