@@ -55,25 +55,24 @@ body {
     background: var(--primary-color);
 }
 .btn:hover {
-    transform: scale(1.2);
     color: var(--orange-color);
 }
 .btn.add__btn {
     position: fixed;
-    bottom: 4rem;
-    left: 7rem;
-    padding: .5rem;
-    font-size: 2rem;
-    background: var(--bg-color);
-    color: var(--white-color);
-    border-radius: .5rem;
-    box-shadow: var(--shadow);
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    top: 1.5rem;
+    right: 23rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--orange-color);
+    box-shadow: var(--shadow1);
     transition: var(--transition);
 }
 .btn.add__btn:hover {
-    box-shadow: none;
-    color: var(--orange-color);
-    transform: scale(1.2);
+    color: var(--white-color);
+    background: var(--orange-color);
 }
 #App {
     position: relative;
