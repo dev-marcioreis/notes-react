@@ -33,11 +33,13 @@ const EditNotes = ( {notes, setNotes} ) => {
   }
 
   const deleteNote = () => {
-    const newNotes = notes.filter(item => item.id !== id);
+    if(window.confirm('Tem certeza que deseja deletar esta nota?')) {
+      const newNotes = notes.filter(item => item.id !== id);
 
-    setNotes(newNotes)
+      setNotes(newNotes)
 
-    navigate('/notes-react')
+      navigate('/notes-react')
+    }
   }
 
   return (
