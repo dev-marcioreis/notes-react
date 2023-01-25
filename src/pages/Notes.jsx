@@ -1,5 +1,5 @@
 import { BiSearchAlt as Search } from 'react-icons/bi' 
-import { AiOutlinePlus as Plus } from 'react-icons/ai'
+import { AiOutlinePlus as Plus, AiOutlineClose as Close } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import NoteItem from '../components/NoteItem'
 import { useEffect, useState } from 'react'
@@ -24,7 +24,7 @@ const Notes = ( {notes} ) => {
         <header className="header__notes">
             {!search && <Link to='/notes-react'><h1>Notas</h1></Link>}
             {search && <input type="text" autoFocus placeholder="Buscar notas..." value={text} onChange={e => {setText(e.target.value); handleSearch()}} />}
-            <button className='btn' onClick={() => setSearch(prevState => !prevState)}><Search /></button>
+            <button className='btn' onClick={() => setSearch(prevState => !prevState)}>{search ? <Close /> : <Search />}</button>
         </header>
         <div className="notes__container">
             {
