@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AiOutlineHome as Home } from 'react-icons/ai'
-import { AiOutlineSave as Save } from 'react-icons/ai'
+import { AiOutlineHome as Home, AiOutlineSave as Save } from 'react-icons/ai'
 import { v4 as uuid } from 'uuid'
 
 import useCreateDate from '../components/useCreateDate'

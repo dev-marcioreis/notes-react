@@ -7,7 +7,7 @@ const Notes = ( {notes} ) => {
   return (
     <section>
         <header className="header__notes">
-            <h1>Notas</h1>
+            <Link to='/notes-react'><h1>Notas</h1></Link>
             <input type="text" autoFocus placeholder="Buscar notas..." />
             <button className='btn'><Search /></button>
         </header>
