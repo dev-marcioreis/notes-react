@@ -4,6 +4,8 @@ Iniciando novo projeto em React.<br>
 React18<br>
 React icons<br>
 React router<br>
+Hooks<br>
+Local Storage<br>
 Link de acesso: https://dev-marcioreis.github.io/notes-react/
 ![image](https://user-images.githubusercontent.com/122680054/214668676-59a97c34-1a4e-4a60-86c5-cc724110efab.png)
 
