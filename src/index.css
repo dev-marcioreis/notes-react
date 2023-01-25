@@ -21,7 +21,6 @@
     --primary-color: hsl(264, 69%, 53%);
     --danger-color: hsl(0, 93%, 65%);
     --bg-color: linear-gradient(45deg,  #4c4c4c 0%,#666666 0%,#666666 0%,#666666 4%,#666666 4%,#666666 8%,#666666 8%,#32363d 25%,#32363d 25%,#2b3138 34%,#2b3138 36%,#2b3138 39%,#2b3138 45%,#2b3138 60%,#32363d 67%,#666666 85%,#666666 89%,#666666 89%,#666666 98%,#666666 100%,#403f45 100%,#1c1c1c 100%,#131313 100%,#525151 100%);
-    --bg2-color: linear-gradient(35deg,#474A51 1%,#1f2127 50%,#1f2127 70%,#1f2127 70%,#474A51 100%);
     --orange-color: hsl(39, 100%, 50%);
     --transparent-color: hsla(0, 0%, 0%, 0);
     --shadow: 0 4px 20px hsla(0, 0%, 4%, 0.322);
@@ -98,7 +97,7 @@ h1, h2 {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.6rem 1.5rem;
-    background: var(--bg2-color);
+    background: var(--transparent-color);
     box-shadow: var(--shadow);
     border-radius: .5rem;
     z-index: 10;
