@@ -7,7 +7,7 @@ Mesmo que você feche o navegador ou atualize, as notas só somem se você apaga
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React + React icons + React router + Hooks + Local Storage
 
 ## ✒️ Autor
